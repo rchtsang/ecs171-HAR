@@ -1,0 +1,8 @@
+# OSX
+.DS_Store
+
+# Jupyter notebook
+.ipynb_checkpoints/
+
+# Node
+node_modules/
