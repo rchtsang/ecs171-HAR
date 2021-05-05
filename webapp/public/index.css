@@ -59,7 +59,7 @@ input[type=file] {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("images/fruits.jpg"); 
+  background-image: url("assets/fruits.jpg"); 
   background-size: cover;
   height: 100vh;
   width: 100vw;
