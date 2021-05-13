@@ -4,6 +4,12 @@
 
 We use a node.js server, so node must be installed. You should be able to navigate to the 'webapp' directory and run 'npm install' to install all dependencies (I believe we actually just use express).
 
+## Usage
+
+Navigate to 'webapp' and run 'node server.js'. Then open your web browser to 'localhost:3000' and browse for a datafile.
+
+WARNING: The code is not robust. If you submit something other than a datafile or a datafile that is wonky just restart the server or refresh the page or both.
+
 ## Summary
 
 This webapp is designed to ultimately allow users to input a data file, which is then analyzed by our machine learning model to predict what activity the data file is associated with.
