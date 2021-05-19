@@ -26,6 +26,12 @@ See the notebook for exact implementation details.
 
 Also check out the discrete wavelet transform for cleaning the data. (DDT and D5) And potentially the S-G filter
 
+#### 5/18
+
+ANN implemented with sklearn MLPClassifier, but the results are disappointing. No outliers are dropped from the data, and StandardScalar is applied to cepstral coefficients. Trained with 500,000 iterations with adam algorithm and logistic activation functions. 
+
+Perhaps improvement can be made with different model or by changing some aspects of preprocessing.
+
 #### 5/17
 
 Finished initial data preprocessing. 
