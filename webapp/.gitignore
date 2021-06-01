@@ -6,3 +6,9 @@
 
 # Node
 node_modules/
+
+# Python cache files?
+models/__pycache__/
+
+# File containing last uploaded datafile
+data.arff

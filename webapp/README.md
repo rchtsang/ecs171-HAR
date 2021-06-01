@@ -6,7 +6,7 @@ We use a node.js server, so node must be installed. You should be able to naviga
 
 ## Usage
 
-Navigate to 'webapp' and run 'node server.js'. Then open your web browser to 'localhost:3000' and browse for a datafile.
+Navigate to 'webapp' and run 'node server.js'. Then open your web browser to 'localhost:3000' and browse for a datafile (examples in models/activities).
 
 WARNING: The code is not robust. If you submit something other than a datafile or a datafile that is wonky just restart the server or refresh the page or both.
 
