@@ -1,7 +1,8 @@
 import os
+from os import normpath, exists
 import requests
 from zipfile import ZipFile
-from shutil import copy
+from shutil import copy, copytree
 from glob import glob
 
 # please run this script at the top level of the project
@@ -19,9 +20,9 @@ with open("wisdm-dataset.zip", 'wb') as file:
     file.write(r.content)
 
 # extract zip file
-print("Extracting Contents to wisdm-dataset/ ...")
+print("Extracting Contents to models/wisdm-dataset/ ...")
 with ZipFile('wisdm-dataset.zip', 'r') as zf:
-    zf.extractall()
+    zf.extractall('models')
 
 # remove zip file
 print("Removing wisdm-dataset.zip ...")
@@ -29,23 +30,30 @@ os.remove('wisdm-dataset.zip')
 
 print("""\nMost of our models use phone accel data,
     so we will copy the relevant data to a dedicated
-    data folder.\n""")
+    data folder in models/.\n""")
 
-# create phone_accel/ directory
-if not os.path.exists('phone_accel/'):
-    print("Creating phone_accel/ directory...")
-    os.makedirs('phone_accel')
+# create models/phone_accel/ directory
+if not exists('models/phone_accel/'):
+    print("Creating models/phone_accel/ directory...")
+    os.makedirs(normpath('models/phone_accel/'))
 
 # copy wisdm data to phone_accel directory
-print("Copying phone/accel/ data to phone_accel/ directory...")
-to_copy = glob(os.path.normpath("./wisdm-dataset/arff_files/phone/accel/*.arff"))
+print("Copying phone/accel/ data to models/phone_accel/ directory...")
+to_copy = glob(normpath("./models/wisdm-dataset/arff_files/phone/accel/*.arff"))
 i = 0
-print(f"{round(i / len(to_copy) * 100)}%", end='')
+print(f"{round(i / len(to_copy) * 100)}%", end='') # print progress
 for filepath in to_copy:
-    copy(filepath, os.path.normpath("phone_accel/"))
+    copy(filepath, normpath("models/phone_accel/"))
     i += 1
-    print(f"\r{round(i / len(to_copy) * 100)}%", end='')
+    print(f"\r{round(i / len(to_copy) * 100)}%", end='') # print progress
 print()
+
+# copy phone_accel directory to the webapp if the folder exists
+if exists('webapp/') \
+        and not exists(normpath('webapp/models/phone_accel/')):
+    print("Copying phone_accel/ to webapp/models/")
+    copytree(normpath('models/phone_accel/'), 
+        normpath('webapp/models/phone_accel/'))
 
 print("\nFinished Initializing Dataset!")
 
