@@ -10,6 +10,13 @@ Please note that there are both `.ipynb` and `.py` files present in this reposit
 
 All models can be found in the `models` directory. They are subdivided into the different models that we implemented, as well as a folder `phone_accel`, which contains the subset of data from the WISDM dataset that we used for model testing and training. More information about each model as well as their results can be found in the corrosponding directories and/or notebooks. 
 
+- Artificial Neural Network
+- k-Nearest Neighbors
+- Logistic Regression
+- Random Forest
+
+Note: spectral-nn was an attempt to preprocess the raw data into spectral and cepstral features. The feature extraction worked, but unfortunately did not perform well under simple sklearn MLPClassifier, likely due to problems with the dataset sampline rate. This has been noted in the report as well.
+
 ### Web App
 
 The `webapp` folder contains the relevent code to run our web app demo. The `README.md` inside that folder contains instructions for running it. It does not implement all of the models and has a separate, modified copy of the ANN implementation for integration with a javascript backend. 
@@ -50,12 +57,12 @@ See `webapp` folder for its file tree.
 Some setup is necessary to run code in this repository. If you are running a unix-based system (Darwin or Linux), there is a bash script `setup.sh` that can be run once that will create a conda environment and install any dependencies.
 Otherwise, things will need to be done manually as follows.
 
-PLEASE NOTE: anaconda is notoriously difficult to install, so **we assume that you have a working distribution of `conda` installed already**. If you don't have that, we recommend installing Miniconda from the [official website](https://docs.conda.io/en/latest/miniconda.html) for a quick start up. 
-**we also assume you have a working distribution of `node`**. This can be installed directly as outlined on the [official node install guide](https://nodejs.org/en/download/) or with a [package manager](https://nodejs.org/en/download/package-manager/).
+PLEASE NOTE: anaconda is notoriously difficult to install, so **we assume that you have a working distribution of `conda` installed and added to PATH variable**. If you don't have that, we recommend installing Miniconda from the [official website](https://docs.conda.io/en/latest/miniconda.html) for a quick start up. 
+**we also assume you have a working distribution of `node` added to PATH**. This can be installed directly as outlined on the [official node install guide](https://nodejs.org/en/download/) or with a [package manager](https://nodejs.org/en/download/package-manager/).
 
-1. Create a new conda environment from `environment.yml`. This should set you up immediately with all python dependencies.
+1. Create a new conda environment from `environment.yml`. This should set you up immediately with all python dependencies. Don't forget to activate it before running any scripts!
 
-2. Download the WISDM Dataset from the UCI ML Repo. (For this we have provided a python script `setup-wisdm.py` that will setup the dataset folders as our scripts expect them. Simply run `python3 setup-wisdm.py`)
+2. Download the WISDM Dataset from the UCI ML Repo. (For this we have provided a poratble python script `setup-wisdm.py` that will setup the dataset folders as our scripts expect them. Simply run `python3 setup-wisdm.py`)
 
 3. To run the webapp, `node` must be installed.
 
