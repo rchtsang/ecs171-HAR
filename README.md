@@ -17,24 +17,27 @@ The `webapp` folder contains the relevent code to run our web app demo. The `REA
 ### File Tree
 ```
 .
-├── README.md
-├── environment.yml
-├── models/
-│   ├── ann/
-│   │   ├── nn.ipynb
-│   │   └── wisdm_preprocess.py
-│   ├── phone_accel/
-│   ├── spectral-nn/
-│   │   ├── README_freq.md
-│   │   ├── bins.py
-│   │   ├── freq-model.ipynb
-│   │   ├── freq-model.py
-│   │   ├── freq-preprocessing.ipynb
-│   │   └── freq-preprocessing.py
-│   └── wisdm-dataset/
-├── setup-wisdm.py
-├── setup.sh
-└── webapp/
+|-- README.md
+|-- environment.yml
+|-- models/
+|   |   `-- bins.cpython-39.pyc
+|   |-- ann/
+|   |   |-- nn.ipynb
+|   |   `-- wisdm_preprocess.py
+|   |-- knn/
+|   |   `-- knn.ipynb
+|   |-- phone_accel/
+|   |-- spectral-nn/
+|   |   |-- README_freq.md
+|   |   |-- bins.py
+|   |   |-- freq-model.ipynb
+|   |   |-- freq-model.py
+|   |   |-- freq-preprocessing.ipynb
+|   |   `-- freq-preprocessing.py
+|   `-- wisdm-dataset/
+|-- setup-wisdm.py
+|-- setup.sh*
+`-- webapp/
 ```
 
 See `webapp` folder for its file tree.
