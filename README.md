@@ -1,4 +1,4 @@
-# ECS171 Group 19 Final Project Repository
+# ECS171 HAR Final Project Repository
 
 Welcome to our final project repository!
 
