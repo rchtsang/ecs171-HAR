@@ -14,6 +14,7 @@ All models can be found in the `models` directory. They are subdivided into the 
 - k-Nearest Neighbors
 - Logistic Regression
 - Random Forest
+- SVM
 
 Note: spectral-nn was an attempt to preprocess the raw data into spectral and cepstral features. The feature extraction worked, but unfortunately did not perform well under simple sklearn MLPClassifier, likely due to problems with the dataset sampline rate. This has been noted in the report as well.
 
