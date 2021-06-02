@@ -1,0 +1,96 @@
+input[type=file] {
+  display: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.mainpage{
+  /* background-color: rgb(220, 20, 60); */
+  /* background-color: rgba(220, 20, 60, 0.6); */
+  background-color: rgba(36, 195, 57, 0.50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.description{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.textbox{
+  display:  flex;
+  background: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.upload:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#fruits {
+  z-index: -100;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("assets/fruits.jpg"); 
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 320px){
+  h1 {
+    margin: 0;
+    padding: 2vh;
+    font-size: 10vw;
+  }
+  .upload {
+    font-size:4vw;
+  }
+  #output{
+    font-size:4vw;
+    margin: 1vw;
+  }
+}
+@media screen and (min-width: 1000px){
+  h1 {
+    margin: 0;
+    padding: 2vh;
+    font-size: 5vw;
+  }
+  .upload {
+    font-size:2vw;
+  }
+  #output{
+    font-size:2vw;
+    margin: 1vw;
+  }
+}
