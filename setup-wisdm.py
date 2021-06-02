@@ -1,5 +1,5 @@
 import os
-from os import normpath, exists
+from os.path import normpath, exists
 import requests
 from zipfile import ZipFile
 from shutil import copy, copytree
