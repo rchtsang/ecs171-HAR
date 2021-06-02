@@ -20,13 +20,16 @@ The `webapp` folder contains the relevent code to run our web app demo. The `REA
 |-- README.md
 |-- environment.yml
 |-- models/
-|   |   `-- bins.cpython-39.pyc
 |   |-- ann/
-|   |   |-- nn.ipynb
+|   |   |-- ann.ipynb
 |   |   `-- wisdm_preprocess.py
 |   |-- knn/
 |   |   `-- knn.ipynb
+|   |-- logistic/
+|   |   `-- logistic.ipynb
 |   |-- phone_accel/
+|   |-- random-forest/
+|   |   `-- random-forest.ipynb
 |   |-- spectral-nn/
 |   |   |-- README_freq.md
 |   |   |-- bins.py

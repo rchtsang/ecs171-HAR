@@ -4,29 +4,29 @@
 
 ```
 webapp/
-├── README.md
-├── models/
-│   ├── activities/
-│   │   ├── eating\ chips.arff
-│   │   ├── eating\ sandwich.arff
-│   │   ├── playing\ catch\ with\ tennis\ ball.arff
-│   │   ├── standing.arff
-│   │   └── walking.arff
-│   ├── nn.h5
-│   ├── nn.ipynb
-│   ├── nn_classes.p
-│   ├── nn_encoder.p
-│   ├── nnmodel.ipynb
-│   ├── nnmodel.py
-│   ├── phone_accel/
-│   ├── predict.py
-│   └── train.py
-├── package-lock.json
-├── public/
-│   ├── index.css
-│   ├── index.html
-│   └── script.js
-└── server.js
+|-- README.md
+|-- models/
+|   |-- activities/
+|   |   |-- eating\ chips.arff
+|   |   |-- eating\ sandwich.arff
+|   |   |-- playing\ catch\ with\ tennis\ ball.arff
+|   |   |-- standing.arff
+|   |   `-- walking.arff
+|   |-- nn.h5
+|   |-- nn.ipynb
+|   |-- nn_classes.p
+|   |-- nn_encoder.p
+|   |-- nnmodel.ipynb
+|   |-- nnmodel.py
+|   |-- phone_accel/ [50 entries exceeds filelimit, not opening dir]
+|   |-- predict.py
+|   `-- train.py
+|-- package-lock.json
+|-- public/
+|   |-- index.css
+|   |-- index.html
+|   `-- script.js
+`-- server.js
 ```
 
 ## Prerequisites
