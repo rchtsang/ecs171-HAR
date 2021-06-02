@@ -54,7 +54,7 @@ See `webapp` folder for its file tree.
 
 ## Setup
 
-Some setup is necessary to run code in this repository. If you are running a unix-based system (Darwin or Linux), there is a bash script `setup.sh` that can be run once that will create a conda environment and install any dependencies.
+Some setup is necessary to run code in this repository. If you are running a unix-based system (Darwin or Linux), there is a bash script `setup.sh` that can be run once that will create a conda environment and install any dependencies. It must be run at the top level of the repo.
 Otherwise, things will need to be done manually as follows.
 
 PLEASE NOTE: anaconda is notoriously difficult to install, so **we assume that you have a working distribution of `conda` installed and added to PATH variable**. If you don't have that, we recommend installing Miniconda from the [official website](https://docs.conda.io/en/latest/miniconda.html) for a quick start up. 
@@ -62,7 +62,7 @@ PLEASE NOTE: anaconda is notoriously difficult to install, so **we assume that y
 
 1. Create a new conda environment from `environment.yml`. This should set you up immediately with all python dependencies. Don't forget to activate it before running any scripts!
 
-2. Download the WISDM Dataset from the UCI ML Repo. (For this we have provided a poratble python script `setup-wisdm.py` that will setup the dataset folders as our scripts expect them. Simply run `python3 setup-wisdm.py`)
+2. Download the WISDM Dataset from the UCI ML Repo. (For this we have provided a poratble python script `setup-wisdm.py` that will setup the dataset folders as our scripts expect them. Simply run `python3 setup-wisdm.py` from the top level of the repo)
 
 3. To run the webapp, `node` must be installed.
 
