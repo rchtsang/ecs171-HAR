@@ -4,3 +4,5 @@
 data/*
 **/_*/
 wisdm-dataset/
+.nonce
+phone_accel/

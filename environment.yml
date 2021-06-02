@@ -1,0 +1,14 @@
+name: test
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterlab
+  - matplotlib
+  - jupyterthemes
+  - pandas
+  - seaborn
+  - scikit-learn
+  - keras
+  - graphviz
+  - pydot
