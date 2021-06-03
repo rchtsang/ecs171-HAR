@@ -45,6 +45,8 @@ The `webapp` folder contains the relevent code to run our web app demo. The `REA
 |   |   |-- freq-model.py
 |   |   |-- freq-preprocessing.ipynb
 |   |   `-- freq-preprocessing.py
+|   |-- svm/
+|   |   `-- SVM.ipynb
 |   `-- wisdm-dataset/
 |-- setup-wisdm.py
 |-- setup.sh*
